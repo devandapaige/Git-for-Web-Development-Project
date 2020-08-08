@@ -157,5 +157,29 @@ b.	Now it should be pushed back to GitHub.
 a.	On GitHub, make a pull request and make sure you’re TLS are listed as reviewers.
 i.	Do not “merge”, your TL will be doing this.
 
+Stretch Questions
+
+1.	What is the difference between an inline element and a block element?
+Block elements will always create a line break between the last element, while inline elements will appear on the same line as the previous element.
+
+2.	What happens when an element is positioned absolutely? 
+Absolute elements are best described as elements that sit on their own layer of the page. They do not need to flow with other elements and do not interfere with the page’s layout. For example, some blogs may have an element positioned absolutely asking you to sign up for their newsletter that may even cover some of the blog post.
+
+3.	How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+Putting the element in a span is an easy way to give that section a width, and because it is an inline element it will only take up as much space as needed. 
+
+4.	Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Block by default – p, div, ul
+Inline by default – img, a
+Inline-block by default - span
+
+5.	In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+Box model is used to explain how elements can appear on a page. The element’s content in the innermost box, which is surrounded by a padding, then a border, and finally a margin. 
+If we want an element to be a particular width/height, we need to make sure to add the padding, border, and margin and on both sides, so for the example below the width would actually be 450px, instead of just the 400px of the image. So if we wanted this image to be 400px wide, we would need to change the width property to 350px.
+Img {
+	Width: 400px;
+	Padding: 25px;
+	Border: solid black 15px;
+	Margin: 10px;  }
 
 
